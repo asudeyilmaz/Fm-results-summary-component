@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Results summary component</title>
+    <link rel="stylesheet" href="variables.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="resultContent">
+        <h3>Your Result</h3>
+        <div class="circle">
+          <h1 id="result"></h1>
+          <p>of 100</p>
+        </div>
+        <h2>Great</h2>
+        <p>
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </section>
+
+      <section class="summaryContent">
+        <ul class="stats">
+          <span class="span">
+            <h3>Summary</h3>
+            <input type="checkbox" class="toggle" />
+          </span>
+          <li class="reactionLi">
+            <span class="reactionText">
+              <img src="assets/images/icon-reaction.svg" alt="Flash icon for reaction stat"/>Reaction</span
+            >
+            <span><b id="reactionScore"></b> / 100</span>
+          </li>
+
+          <li class="memoryLi">
+            <span class="memoryText">
+              <img src="assets/images/icon-memory.svg" alt="Brain icon for memory stat"/>Memory</span
+            >
+            <span><b id="memoryScore"></b> / 100</span>
+          </li>
+
+          <li class="verbalLi">
+            <span class="verbalText">
+              <img src="assets/images/icon-verbal.svg" alt="Comment icon for verbal stat"/>Verbal</span>
+            <span> <b id="verbalScore"></b> / 100</span>
+          </li>
+
+          <li class="visualLi">
+            <span class="visualText">
+              <img src="assets/images/icon-visual.svg" alt="Eye icon for visual stat"/>
+              Visual
+            </span>
+            <span> <b id="visualScore"></b> / 100 </span>
+          </li>
+        </ul>
+
+        <button class="contButton">Continue</button>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

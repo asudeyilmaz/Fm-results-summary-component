@@ -1,0 +1,64 @@
+:root {
+  --Light-red: hsl(0, 100%, 67%);
+  --Light-red-op: hsl(0, 100%, 67%, 0.1);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Orangey-yellow-op: hsl(39, 100%, 56%,0.1);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Green-teal-op: hsl(166, 100%, 37%,0.1);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+  --Cobalt-blue-op: hsl(234, 85%, 45%,0.1);
+
+
+/*Gradients*/
+
+--Light-slate-blue-background: hsl(252, 100%, 67%);
+--Light-royal-blue-background: hsl(241, 81%, 54%);
+--Violet-blue-circle: hsla(256, 72%, 46%, 1);
+--Persian-blue-circle: hsla(241, 72%, 46%, 0);
+--btn-active: hsla(241, 72%, 46%,0.8);
+--smry-bckg-color: white;
+
+
+/*Neutral */
+
+--Pale-blue: hsl(221, 100%, 96%);
+--Light-lavender: hsl(241, 100%, 89%);
+--Dark-gray-blue: hsl(224, 30%, 27%);
+
+/* Layouts */
+--width-5-7: clamp(31.25rem, calc(26.25rem + 20vw), 43.75rem);
+--width-5-8: clamp(31.25rem, calc(23.75rem + 30vw), 50rem);
+--width-circle: clamp(6.25rem, calc(6rem + 1vw), 6.875rem);
+--width-25-5: clamp(15.625rem, calc(5.208rem + 83.333vw), 31.25rem);
+--width-2-45: clamp(12.5rem, calc(2.083rem + 83.333vw), 28.125rem);
+--padding-4:clamp(2.188rem, calc(2.063rem + 0.5vw), 2.5rem);
+--padding-3: clamp(1.563rem, calc(1.438rem + 0.5vw), 1.875rem);
+--padding-li: clamp(0.625rem, calc(0.55rem + 0.3vw), 0.813rem) 0.75rem;
+--padding-button: clamp(0.75rem, calc(0.675rem + 0.3vw), 0.938rem);
+--result-font-size: clamp(4rem, 3.60rem + 1.60vw, 5rem);
+--margin-li: clamp(0.625rem, calc(0.208rem + 3.333vw), 1.25rem);
+}
+
+body.dark {
+
+--Light-red: rgb(207, 10, 10);
+--Light-red-op:rgb(37, 30, 30);
+--Orangey-yellow: var(--Light-red);
+--Orangey-yellow-op: var(--Light-red-op);
+--Green-teal: var(--Light-red);
+--Green-teal-op: var(--Light-red-op);
+--Cobalt-blue: var(--Light-red);
+--Cobalt-blue-op: var(--Light-red-op);
+
+--Light-slate-blue-background: var(--Light-red-op);
+--Light-royal-blue-background: rgb(68, 23, 23);
+--Violet-blue-circle: rgb(68, 23, 23);
+--Persian-blue-circle:hsla(241, 72%, 46%, 0);
+--Dark-gray-blue: hsl(0, 100%, 28%);
+--btn-active: rgb(141, 34, 34);
+
+--Pale-blue:var(--Light-red-op);
+--Light-lavender: rgb(150, 54, 54);
+ --smry-bckg-color: hsl(0, 8%, 18%);
+}
+
