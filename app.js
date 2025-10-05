@@ -6,7 +6,6 @@ const result = document.querySelector("#result");
 const toggle = document.querySelector(".toggle");
 const img = document.querySelectorAll("img");
   const body= document.querySelector("body");
-const li = document.querySelectorAll(".stats li");
 fetch("data.json")
   .then((response) => response.json())
   .then((data) => {
@@ -24,7 +23,7 @@ fetch("data.json")
 
   function changeCss(){
   
-    if(toggle.checked==true){
+    if(toggle.checked===true){
       body.classList.toggle("dark");
       for(let value of img){
         value.style.display="none";
@@ -32,7 +31,7 @@ fetch("data.json")
 
     }else{
       body.className="body"
-      for(let value of img){
+      for(const value of img){
         value.style.display= "block"
       }
     }
